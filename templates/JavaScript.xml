@@ -1,0 +1,48 @@
+<templateSet group="JavaScript">
+  <template name="ccFunc" value="$1$ function($2$) {&#10;    $END$&#10;}," description="define cc function" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ccLog" value="LogUtils.log([&quot;$END$&quot;]);" description="console.log()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ccGetSet" value="    set$1$: function($1$) {&#10;        this._$1$ = $1$; &#10;    },&#10;    get$1$: function() {&#10;        return this._$1$;  &#10;    },&#10;    $END$" description="define cc function" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ccReceiveFunc" value="    /**&#10;     * @param {CmdReceivedCommon}packet&#10;     */&#10;    receive$1$: function (packet) {&#10;        $END$&#10;    }," description="ccReceiveFunc" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ccLogError" value="LogUtils.error($END$);" description="log error" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ccCallFunc" value="    cc.callFunc(function (sender) {&#10;        $END$&#10;    }.bind(this))" description="ccCallFunc" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ccLogTrace" value="LogUtils.trace($END$);" description="log error" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="getSet" value="    set $1$($1$) {&#10;        this._$2$ = $1$; &#10;    },&#10;    get $1$() {&#10;        return this._$2$;  &#10;    },&#10;    $END$" description="define set get" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
